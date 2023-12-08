@@ -1,12 +1,14 @@
-* {
+@keyfra * {
   margin: 0;
   padding: 0;
   transition: all 2s ease;
-  /* outline: 1px solid green; */
+  font-family: "Share Tech";
 }
+
 .center {
   text-align: center;
 }
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -15,30 +17,28 @@
   left: 0;
   filter: blur(30px);
 }
+
 .background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 #app {
   display: block;
-  /* background: white; */
   width: 100vw;
   margin: 0;
   padding: 0;
   height: 100vh;
-  /* overflow: hidden; */
   position: relative;
 }
+
 #app .villaku {
   width: 90vw;
-  /* height: 130vh; */
-  /* margin-top: 50vh; */
   position: fixed;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 50%);
-  /* background: red; */
   height: auto;
   z-index: 5;
 }
@@ -53,15 +53,15 @@
 
 #app .villaku img {
   width: 100%;
-  /* position: absolute;
-  margin: 0; */
 }
+
 #app .villaku > div {
   top: 0;
   width: 100%;
   height: auto;
   position: relative;
 }
+
 #app .villaku .fire.hidden {
   opacity: 0;
 }
@@ -73,15 +73,13 @@
   opacity: 1;
   height: auto;
 }
-/* #app .villaku .fire {
-  mix-blend-mode: screen;
-} */
 
 .fire-one {
   top: 24%;
   left: 44%;
   width: 8%;
 }
+
 .fire-two {
   width: 7.8%;
   top: 20%;

@@ -1,4 +1,12 @@
-@keyfra * {
+@keyframes burn {
+  from {
+    transform: rotate(-2.5deg);
+  }
+  to {
+    transform: rotate(2.5deg);
+  }
+}
+* {
   margin: 0;
   padding: 0;
   transition: all 2s ease;
@@ -72,6 +80,7 @@
   transition: all 0.5s ease;
   opacity: 1;
   height: auto;
+  animation: burn 0.5s ease infinite alternate;
 }
 
 .fire-one {

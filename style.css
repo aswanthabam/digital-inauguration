@@ -1,90 +1,140 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 2s ease;
+  /* outline: 1px solid green; */
 }
-
+.center {
+  text-align: center;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(30px);
+}
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 #app {
-  background: white;
+  display: block;
+  /* background: white; */
   width: 100vw;
   margin: 0;
   padding: 0;
   height: 100vh;
+  /* overflow: hidden; */
+  position: relative;
 }
 #app .villaku {
-  width: 70%;
-  height: auto;
-  position: absolute;
-  bottom: -70%;
+  width: 90vw;
+  /* height: 130vh; */
+  /* margin-top: 50vh; */
+  position: fixed;
+  bottom: 0px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, 50%);
+  /* background: red; */
+  height: auto;
+  z-index: 5;
 }
+
+#app .villaku.done {
+  bottom: none;
+  right: 0;
+  top: 45%;
+  width: 50%;
+  transform: translate(-0%, -50%);
+}
+
 #app .villaku img {
   width: 100%;
+  /* position: absolute;
+  margin: 0; */
+}
+#app .villaku > div {
+  top: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 #app .villaku .fire.hidden {
   opacity: 0;
-  width: 0;
 }
+
 #app .villaku .fire {
-  /* background: #ce5b24; */
   border-radius: 50%;
   position: absolute;
   transition: all 0.5s ease;
   opacity: 1;
+  height: auto;
 }
+/* #app .villaku .fire {
+  mix-blend-mode: screen;
+} */
+
 .fire-one {
-  top: 26%;
-  left: 43%;
+  top: 24%;
+  left: 44%;
   width: 8%;
 }
 .fire-two {
-  width: 130px;
-  top: 21.5%;
-  left: 28%;
+  width: 7.8%;
+  top: 20%;
+  left: 37%;
 }
 
 .fire-three {
-  width: 130px;
-  top: 21.5%;
-  right: 30%;
+  width: 7.8%;
+  top: 21%;
+  right: 38.5%;
 }
 
 .fire-four {
-  width: 70px;
-  top: 12.5%;
-  left: 26%;
+  width: 6.5%;
+  top: 14.2%;
+  left: 41.5%;
 }
 
 .fire-five {
-  width: 70px;
-  top: 13%;
-  right: 27%;
+  width: 6.5%;
+  top: 15%;
+  right: 41.5%;
 }
 
-.fire-six {
-  width: 50px;
-  top: 6.7%;
-  left: 39%;
-}
-
-.fire-seven {
-  width: 50px;
-  top: 6.7%;
-  right: 36%;
-}
-
-.fire img {
-  width: 100%;
-}
-#app .title.hidden {
+.content.hidden {
   opacity: 0;
+  pointer-events: none;
 }
-#app .title {
+
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  font-family: "Rubik Bubbles", Courier, monospace;
-  margin-top: 20px;
-  opacity: 1;
+  flex-direction: column;
+  padding: 20px;
+  width: 50vw;
+  height: 50vw;
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  gap: 20px;
+}
+
+.content .bg {
+  width: 100%;
+  height: 100%;
+  background: #ffffff90;
+  border-radius: 30px;
+  filter: blur(10px);
+  position: absolute;
+  z-index: -1;
+}
+
+.content img {
+  width: 100px;
 }

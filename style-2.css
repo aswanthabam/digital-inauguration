@@ -42,7 +42,7 @@
 }
 
 #app .villaku {
-  width: 90vw;
+  width: 100vw;
   position: fixed;
   bottom: 0px;
   left: 50%;
@@ -54,7 +54,7 @@
 #app .villaku.done {
   bottom: none;
   right: 0;
-  top: 45%;
+  top: 50%;
   width: 50%;
   transform: translate(-0%, -50%);
 }

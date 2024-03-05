@@ -15,6 +15,7 @@
 
 .center {
   text-align: center;
+  font-size: 30px;
 }
 
 .background {
@@ -147,5 +148,7 @@
 }
 
 h1.title {
-  font-size: 30px;
+  font-size: 90px;
+  font-family: "Alatsi", sans-serif;
+  color: #4a3361;
 }
